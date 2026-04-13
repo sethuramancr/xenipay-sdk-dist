@@ -1,0 +1,5 @@
+# Local-only copy for SPM path-binary testing (do not commit)
+XeniPaySDK.xcframework.zip
+XeniPaySDK.xcframework/
+
+.DS_Store
