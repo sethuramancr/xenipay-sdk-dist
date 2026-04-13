@@ -15,8 +15,9 @@ private let localZipPath = root.appendingPathComponent("XeniPaySDK.xcframework.z
 private let hasLocalZip = FileManager.default.fileExists(atPath: localZipPath)
 
 private let releaseTag = "1.0.0"
+/// GitHub Release asset on your fork (must match org/repo where you publish the zip).
 private let remoteBinaryURL =
-    "https://github.com/xeni-app/xenipay-sdk-dist/releases/download/\(releaseTag)/XeniPaySDK.xcframework.zip"
+    "https://github.com/sethuramancr/xenipay-sdk-dist/releases/download/\(releaseTag)/XeniPaySDK.xcframework.zip"
 
 /// Must match `swift package compute-checksum` on the exact bytes uploaded to the release asset.
 private let remoteBinaryChecksum =

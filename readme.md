@@ -2,10 +2,12 @@
 
 Swift Package distribution for **XeniPaySDK** (binary only). Source lives in [`xenipay-sdk`](https://github.com/xeni-app/xenipay-sdk).
 
+**Fork:** `https://github.com/sethuramancr/xenipay-sdk-dist` (upstream: `xeni-app/xenipay-sdk-dist`).
+
 ## Integrators (Xcode / SPM)
 
-- **After you publish:** add `https://github.com/xeni-app/xenipay-sdk-dist.git` with **Exact** version **1.0.0** (or your tag). Requires a **GitHub Release** with `XeniPaySDK.xcframework.zip` at the URL in `Package.swift`.
-- **Until then (local monorepo):** point Xcode at the **local folder** `../xenipay-sdk-dist` and keep `XeniPaySDK.xcframework.zip` next to `Package.swift` so SPM uses the path-based binary (see `.gitignore` — do not commit the zip).
+- **Fork:** add `https://github.com/sethuramancr/xenipay-sdk-dist.git` — sample app uses **branch `main`** until you tag releases.
+- **Binary zip:** `Package.swift` downloads from **your fork’s** GitHub Release (`sethuramancr/xenipay-sdk-dist`, tag `1.0.0`) when no local zip is present. Publish that release + asset, or keep a local `XeniPaySDK.xcframework.zip` for path-based resolution (see `.gitignore`).
 
 ## Publish a new binary
 
